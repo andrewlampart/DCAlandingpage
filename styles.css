@@ -311,35 +311,36 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #1C2B39;
-    color: #ffffff;
-    padding: 50px 0 20px;
+    background-color: #ffffff;
+    color: #1C2B39;
+    padding: 50px 0 25px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: 25px;
+    align-items: start;
 }
 
 .footer-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 15px;
+    color: #1C2B39;
+    margin-bottom: 12px;
 }
 
 .footer-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 15px;
+    color: #1C2B39;
+    margin-bottom: 12px;
 }
 
 .footer-text {
     font-size: 14px;
-    color: #E5F2FB;
+    color: #555;
     line-height: 1.6;
 }
 
@@ -348,12 +349,12 @@ body {
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer-links a {
     font-size: 14px;
-    color: #E5F2FB;
+    color: #555;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -363,7 +364,7 @@ body {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(28, 43, 57, 0.1);
     padding-top: 20px;
     text-align: center;
 }
@@ -371,6 +372,74 @@ body {
 .footer-copyright {
     font-size: 12px;
     color: #555;
+}
+
+/* O nas */
+.about-us {
+    padding: 80px 0;
+    background-color: #E5F2FB;
+}
+
+.about-us-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us-text {
+    font-size: 18px;
+    color: #1C2B39;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.logos-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-image {
+    max-width: 150px;
+    max-height: 60px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-image.logo-university {
+    max-width: 700px;
+    max-height: 180px;
+}
+
+.logo-text {
+    font-family: 'Agrandir', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #1C2B39;
+    letter-spacing: 0.5px;
+}
+
+.logo-placeholder {
+    width: 200px;
+    height: 80px;
+    background-color: #E5F2FB;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
 }
 
 /* Responsive Design */
@@ -391,6 +460,34 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .about-us {
+        padding: 60px 0;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .logos-grid {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .logo-image {
+        max-width: 120px;
+        max-height: 50px;
+    }
+
+    .logo-image.logo-university {
+        max-width: 100%;
+        max-height: 140px;
+    }
+
+    .logo-text {
+        font-size: 28px;
     }
 }
 
@@ -482,6 +579,34 @@ body {
 
     .monster-icon {
         font-size: 80px;
+    }
+
+    .about-us {
+        padding: 40px 0;
+    }
+
+    .about-us-text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .logos-grid {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo-image {
+        max-width: 100px;
+        max-height: 40px;
+    }
+
+    .logo-image.logo-university {
+        max-width: 100%;
+        max-height: 120px;
+    }
+
+    .logo-text {
+        font-size: 24px;
     }
 }
 
